@@ -1,0 +1,33 @@
+============= BUỔI 1 =============
+
+I. Introduce
+  1. What is Python? (easy-to-learn programming language, language syntax)
+  2. What is Python use for?
+  3. Why we learn Python (syntax, plattform, package, function, library...)
+  4. Python setup
+  5. IDE vs Text Editor
+
+II. Get Started
+  1. Hello World
+  2. Input, print, basic syntax
+  3. Comment (inline, multiple line, why need to Comment)
+  4. begin to datatypes (int, float, string,,, type(x), sep, unpack a collection)
+  4. variables (input, print, global, function)
+
+
+III. Exercise
+  1. Nhập vào 2 số nguyên dương, tính cộng trừ nhân chia
+    
+    -INPUT:
+      nhap gia tri so thu nhat: ...
+      nhap gia tri so thu hai: ...
+
+    -OUTPUT:
+      tong hai so (a) và (b) là: ... 
+      difference: ...
+      product: ...
+      quotient: ...
+
+  2. Nhập vào 2 số nguyên dương, tính cộng trừ nhân chia (Lưu ý: nếu input không đúng định dạng đầu vào thì xuất thông báo: "datatype error!!!")
+
+  3. Nhập vào 2 số nguyên dương, tính cộng trừ nhân chia (Lưu ý: sử dụng hàm def function() để tính toán)

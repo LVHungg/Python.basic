@@ -1,0 +1,24 @@
+======= BUỔI 2 =======
+
+I. Git/GitHub
+What is Git/Github?
+What is Git use for? (Source control, version control)
+Version control, Git & GitHub
+Cài đặt Git
+
+II. Main point
+repo
+commit
+branch
+
+- git init
+- git clone
+- git pull
+
+- git add / git add.
+- git commit
+- git push
+
+- git log
+- git status
+- git log -decorate -graph -oneline
