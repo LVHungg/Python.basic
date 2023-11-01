@@ -1,0 +1,12 @@
+tìm hiểu về int, float, string
+
+đặc điểm nhận biết int, float, string
+datatype method:
+	type()
+	datatype convert
+	string method:
+		slice
+		upper()
+		lower()
+		for in string
+		check string
