@@ -25,12 +25,14 @@ Output:
     {weight} ki-lô-gam thịt heo
     {weight} ki-lô-gam tôm
 
+----------------------------------------------------------------
 Test case:
+- input:
 giá thịt bò: 280
 giá thịt heo: 160
 giá tôm sú: 320
 
-output:
+- output:
   Có thể mua được:
     0.8 ki-lô-gam thịt bò
     1.4 ki-lô-gam thịt heo
