@@ -39,3 +39,23 @@ tổng cân nặng mua 3 loại thực phẩm: 2.9
     1.4 ki-lô-gam thịt heo
     0.7 ki-lô-gam tôm
 """
+weight = float(input('tổng cân nặng 3 loại thực phẩm : '))
+price_beef = int(input(' giá của thịt bò là : ')) 
+price_pork = int(input(' giá của thịt heo là : '))
+price_shrimp = int(input(' giá của tôm số là : '))
+# Giá tiền cho mỗi loại thực phẩm (tương đồng nhau)
+total_cost = weight * ((price_beef + price_pork + price_shrimp)/3) /3    # Giá tiền tổng cộng
+
+# Sử dụng giá tiền và giá/kg để tính số kilogram cho từng loại thực phẩm
+beef_weight = total_cost / price_beef
+pork_weight = total_cost / price_pork
+shrimp_weight = total_cost / price_shrimp
+#làm tròn số
+beef_weight = round((beef_weight),1)
+pork_weight = round((pork_weight),1)
+shrimp_weight = round((shrimp_weight),1)
+# In số kilogram cho từng loại thực phẩm
+print("có thể mua được")
+print(f'{beef_weight} số kilogram thịt bò ')
+print(f'{pork_weight} số kilogram thịt heo')
+print(f'{shrimp_weight} số kilogram tôm sú')

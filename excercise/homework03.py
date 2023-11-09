@@ -58,14 +58,17 @@ input: Nhập vào họ tên đầy đủ
 ouput: In ra Họ, Tên đệm, Tên (mỗi giá trị in ra trên 1 dòng)
 """
 
-fullname = str(input(' Nhập họ tên đầy đủ : '))  # Nguyễn Trần Vĩnh An
-firstname = (fullname[0:11])
-middlename = (fullname[12:16])
-lastname = (fullname[-2:])
-print("Họ là : ", firstname)
-print("Tên đệm là : ", middlename)
-print("Tên là :", lastname)
-
+fullname = str(input(' Nhập họ tên đầy đủ : ')) 
+name = fullname.split()
+if len(name) >= 3:
+    last_name = name[0]
+    middle_name = name[1]
+    first_name = ' '.join(name[2:])
+    print("Họ:", last_name)
+    print("Tên đệm:", middle_name)
+    print("Tên:", first_name)
+else:
+    print("Vui lòng nhập đúng định dạng họ tên (Họ Tên đệm Tên).")
 # REVIEW BÀI LÀM:
 """
 BÀI 02:
