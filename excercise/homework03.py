@@ -14,23 +14,52 @@ note:
 """
 
 # bài 1 :
+#
 # nhập dữ liệu
-from datetime import datetime
+
 firstname = str.capitalize((input('Nhập họ : ')))
 lastname = str.capitalize((input('Nhập tên : ')))
 middlename = str.capitalize((input('Nhập tên đệm : ')))
 birthday = str(input(' Nhập ngày tháng năm sinh (dd/mm/yyyy) : '))
+
 fullname = firstname + ' ' + middlename + ' ' + lastname
-# khai báo thư viện datetime để kiếm ngày hiện tại
-# phân tích một chuỗi ngày tháng thành một đối tượng  #"%d/%m/%Y" định dạng ngày tháng năm
-year_bd = datetime.strptime(birthday, "%d/%m/%Y")
+
 # // 365 chia số ngày cho 365 để tính tuổi. Kết quả trả về sẽ là tuổi (làm tròn xuống đến số nguyên gần nhất).
-age = (datetime.now() - year_bd).days // 365
+def age_caculate(day_bd1,month_bd,year_bd):
+    # case1: month of birthday > to_month
+    if month_bd > 11:
+        age = (2023 - 1) - year_bd
+    # case2: month of birthday < to_month
+    if month_bd < 11:
+        age = 2023 - year_bd
+    # case3: month of birthday == to_month
+    if month_bd == 11:
+        # case1: day of birthday > today
+        if day_bd > 15:
+            age = 2023 - 1 - year_bd
+        # case2: day of birthay >= today
+        else:
+            age = 2023 - year_bd
+    return age
+
+# DATA PROCESSING: split string of birthday to get day_bd, month_bd, year_bd and calculate age
+#split string of birthday
+day_bd = int(birthday[:2])
+month_bd = int(birthday[3:5])
+year_bd = int(birthday[-4:])
+
+age = age_caculate(day_bd, month_bd, year_bd)
+
+# OUTPUT - print the result
+# print(day_bd)
+# print(month_bd)
+# print(year_bd)
+# print(age)
 
 print('fullname có:', fullname)
 print("Họ là :", firstname)
 print("Tên là :", lastname)
-print("năm nay \"{lastname}\" tròn {age} tuổi.")
+print(f"Năm nay \"{lastname}\" tròn {age} tuổi.")
 
 """
 BÀI 01:
@@ -60,15 +89,19 @@ ouput: In ra Họ, Tên đệm, Tên (mỗi giá trị in ra trên 1 dòng)
 
 fullname = str(input(' Nhập họ tên đầy đủ : ')) 
 name = fullname.split()
+
+
 if len(name) >= 3:
     last_name = name[0]
-    middle_name = name[1]
-    first_name = ' '.join(name[2:])
+    middle_name =  name[1:-1]
+    first_name = name[-1]
     print("Họ:", last_name)
-    print("Tên đệm:", middle_name)
+    print("Tên đệm:", str(middle_name))
     print("Tên:", first_name)
 else:
     print("Vui lòng nhập đúng định dạng họ tên (Họ Tên đệm Tên).")
+
+
 # REVIEW BÀI LÀM:
 """
 BÀI 02:
