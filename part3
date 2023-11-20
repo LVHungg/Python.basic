@@ -1,0 +1,19 @@
+int
+float
+string
+list
+dict
+
+array
+
+what?
+-int : trả về một đối tượng số nguyên 
+-float : chuyển đổi giá trị được chỉ định thành số dấu phẩy động ( số thực )
+-string : Chuỗi ký tự trong python được bao quanh bởi dấu ngoặc kép đơn hoặc dấu ngoặc kép ( có thể chứa số, chữ hoặc cả chữ số )
+
+how?
+
+
+  
+
+
